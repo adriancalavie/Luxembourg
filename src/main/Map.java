@@ -210,13 +210,10 @@ public class Map extends JPanel {
 
     private void bellmanFord() {
 
-        //step1
         for (Node node : nodes) {
             costSoFar.put(node, Integer.MAX_VALUE);
             cameFrom.put(node, null);
         }
-
-//        System.out.println("finished step 1");
 
         cameFrom.put(pointStart, null);
         costSoFar.put(pointStart, 0);
@@ -260,55 +257,5 @@ public class Map extends JPanel {
 
         isMarking = true;
         System.out.println(costSoFar.get(pointEnd));
-
-//        step 2:
-//
-//        int size = nodes.size();
-//
-//        BigInteger max =  new BigInteger(String.valueOf(BigInteger.valueOf(size).multiply(BigInteger.valueOf(edges.size()))));
-//        BigInteger counter = new BigInteger("0");
-//
-//        for (; ; ) {
-//
-//            boolean any = false;
-//            for (java.util.Map.Entry<Pair<Integer, Integer>, Integer> entry : edges.entrySet()) {
-//                Integer from = entry.getKey().getKey();
-//                Integer to = entry.getKey().getValue();
-//                Integer cost = entry.getValue();
-//
-//                int newCost = costSoFar.get(nodes.get(from)) + cost;
-//
-//                if (costSoFar.get(nodes.get(from)) != Integer.MAX_VALUE && newCost < costSoFar.get(nodes.get(to))) {
-//                    costSoFar.put(nodes.get(to), newCost);
-//                    cameFrom.put(nodes.get(to), nodes.get(from));
-//                    any = true;
-//                }
-////               counter = counter.add(BigInteger.valueOf(1));
-////                BigInteger big = counter.multiply(BigInteger.valueOf(100)).divide(max);
-////                System.out.println( big + "% (" + counter + " out of " + max + ")");
-//            }
-//
-//            if (!any) {
-//                isMarking = true;
-//                System.out.println(costSoFar.get(pointEnd));
-//                repaint();
-//                break;
-//            }
-//        }
-//
-//
-//        step 3: check for negative weight cycles
-//        for (java.util.Map.Entry<Pair<Integer, Integer>, Integer> entry : edges.entrySet()) {
-//
-//            Integer from = entry.getKey().getKey();
-//            Integer to = entry.getKey().getValue();
-//            Integer cost = entry.getValue();
-//
-//            int newCost = costSoFar.get(nodes.get(from)) + cost;
-//            if (costSoFar.get(nodes.get(from)) != Integer.MAX_VALUE && newCost < costSoFar.get(nodes.get(to))) {
-//                System.err.println("Graph contains a negative-weight cycle");
-//                break;
-//            }
-//        }
     }
 }
