@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<map description="oras">
+  <nodes>
+    <node id="0" longitude="4963454" latitude="621476"/>
+    <node id="1" longitude="4959493" latitude="614350"/>
+    <node id="2" longitude="4959247" latitude="612096"/>
+    <node id="3" longitude="4959206" latitude="612162"/>
+    <node id="4" longitude="4962199" latitude="612071"/>
+    <node id="5" longitude="4959383" latitude="612790"/>
+    <node id="6" longitude="4959373" latitude="612815"/>
+    <node id="7" longitude="4961893" latitude="612207"/>
+    <node id="8" longitude="4961821" latitude="612403"/>
+    <node id="9" longitude="4959500" latitude="613651"/>
+  </nodes>
+  <arcs>
+    <arc from="0" to="8" length="57"/>
+    <arc from="0" to="9" length="13"/>
+    <arc from="1" to="3" length="49"/>
+    <arc from="1" to="6" length="22"/>
+    <arc from="2" to="1" length="22"/>
+    <arc from="2" to="4" length="40"/>
+    <arc from="3" to="1" length="22"/>
+    <arc from="3" to="7" length="103"/>
+    <arc from="4" to="7" length="153"/>
+    <arc from="4" to="6" length="14"/>
+    <arc from="5" to="2" length="77"/>
+    <arc from="5" to="6" length="19"/>
+    <arc from="6" to="5" length="19"/>
+  </arcs>
+</map>
