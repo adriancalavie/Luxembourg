@@ -1,7 +1,7 @@
 package main;
 
 import data_load.Reader;
-import javafx.util.Pair;
+import util.Pair;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -9,10 +9,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
-
         draw();
-
     }
 
     public static void draw() {

@@ -1,6 +1,5 @@
 package data_load;
 
-import javafx.util.Pair;
 
 import static constants.Constants.*;
 
