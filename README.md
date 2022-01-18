@@ -8,8 +8,8 @@ shortest path between two points on the map of Luxembourg. We were given the inp
 data as a massive xml file consisting of ```nodes``` and ```edges``` and our task
 was to translate the latitude and longitude values into pixels on the screen, to
 plot them and let the user choose two points on the map, the points to be chosen would
-be the closest to where the mouse clicks. The homework also requested we implement both
-Dijkstra's and Bellman-Ford algorithms
+be the closest to where the mouse clicks. Also, we were required to implement both
+Dijkstra's and Bellman-Ford algorithms.
 
 ## Instructions
 
